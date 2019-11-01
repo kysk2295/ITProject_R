@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/colorSecond"
+    android:elevation="4dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/item_setmanage_checkbox"
+                android:layout_marginLeft="10dp">
+
+            </CheckBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:text="2019년 9월 12일"
+                android:id="@+id/item_setmanage_textview_date"
+                android:gravity="center"
+                android:layout_marginRight="40dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="38dp"
+            android:text="HELLO"
+            android:id="@+id/item_setmanage_textview_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:textSize="20dp"
+            android:text="2019년 9월 모의고사"
+            android:id="@+id/item_setmanage_textview_detail"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:text="학습 진행률"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"/>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_2"
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                app:rcBackgroundPadding="5dp"
+                app:rcRadius="15dp"
+                app:rcProgressColor="@color/colorSecond"
+                app:rcSecondaryProgressColor="@color/colorMain"
+                app:rcBackgroundColor="@color/colorGrey"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
